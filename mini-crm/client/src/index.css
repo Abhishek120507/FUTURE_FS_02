@@ -1,0 +1,99 @@
+:root {
+  --bg-page: #121212;
+  --bg-surface: #1E1E1E;
+  --bg-surface-muted: #252525;
+  --bg-surface-hover: #2A2A2A;
+  --border-subtle: #333333;
+  --border-default: #444444;
+  --text-primary: #E8E8E8;
+  --text-secondary: #A0A0A0;
+  --text-tertiary: #707070;
+
+  --accent: #8B5CF6;
+  --accent-hover: #7C3AED;
+  --accent-soft-bg: #2D1B69;
+  --accent-soft-text: #C4B5FD;
+
+  --status-new-bg: #0D3B2E;
+  --status-new-text: #6EE7B7;
+  --status-contacted-bg: #3A2A10;
+  --status-contacted-text: #FCD34D;
+  --status-converted-bg: #3A1A10;
+  --status-converted-text: #FCA5A5;
+
+  --danger: #EF4444;
+  --danger-hover: #DC2626;
+  --danger-soft-bg: #3B1A1A;
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 12px 40px rgba(0, 0, 0, 0.14);
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-full: 9999px;
+
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--bg-page);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
